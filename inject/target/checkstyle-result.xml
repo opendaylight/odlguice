@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="8.32">
+<file name="/home/lumina/work/codebases/opendaylight/odlguice/inject/src/main/java/org/opendaylight/odlguice/inject/ClassPathScanner.java">
+</file>
+<file name="/home/lumina/work/codebases/opendaylight/odlguice/inject/src/main/java/org/opendaylight/odlguice/inject/PostFullSystemInjectionListener.java">
+</file>
+<file name="/home/lumina/work/codebases/opendaylight/odlguice/inject/src/main/java/org/opendaylight/odlguice/inject/Lifecycle.java">
+</file>
+<file name="/home/lumina/work/codebases/opendaylight/odlguice/inject/src/main/java/org/opendaylight/odlguice/inject/AbstractLifecycle.java">
+</file>
+<file name="/home/lumina/work/codebases/opendaylight/odlguice/inject/src/main/java/org/opendaylight/odlguice/inject/package-info.java">
+</file>
+<file name="/home/lumina/work/codebases/opendaylight/odlguice/inject/src/main/java/org/opendaylight/odlguice/inject/ModuleSetupRuntimeException.java">
+</file>
+</checkstyle>

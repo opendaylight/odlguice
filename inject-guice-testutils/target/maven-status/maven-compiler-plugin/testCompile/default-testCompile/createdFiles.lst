@@ -1,0 +1,8 @@
+org/opendaylight/odlguice/inject/guice/testutils/tests/ExamplePureGuiceTest$TestModule.class
+org/opendaylight/odlguice/inject/guice/testutils/tests/SomeInterfaceWithPostConstruct.class
+org/opendaylight/odlguice/inject/guice/testutils/tests/GuiceRuleForgotAnnotationsModuleTest.class
+org/opendaylight/odlguice/inject/guice/testutils/tests/GuiceRuleForgotAnnotationsModuleTest$TestModule.class
+org/opendaylight/odlguice/inject/guice/testutils/tests/ExampleGuiceRuleTest$TestModule.class
+org/opendaylight/odlguice/inject/guice/testutils/tests/SomeClassWithPostConstruct.class
+org/opendaylight/odlguice/inject/guice/testutils/tests/ExamplePureGuiceTest.class
+org/opendaylight/odlguice/inject/guice/testutils/tests/ExampleGuiceRuleTest.class

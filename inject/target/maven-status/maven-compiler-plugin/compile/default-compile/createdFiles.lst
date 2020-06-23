@@ -1,0 +1,6 @@
+org/opendaylight/odlguice/inject/Lifecycle.class
+org/opendaylight/odlguice/inject/AbstractLifecycle$State.class
+org/opendaylight/odlguice/inject/ClassPathScanner.class
+org/opendaylight/odlguice/inject/AbstractLifecycle.class
+org/opendaylight/odlguice/inject/PostFullSystemInjectionListener.class
+org/opendaylight/odlguice/inject/ModuleSetupRuntimeException.class

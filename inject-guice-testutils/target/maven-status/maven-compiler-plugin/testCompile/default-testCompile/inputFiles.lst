@@ -1,0 +1,5 @@
+/home/lumina/work/codebases/opendaylight/odlguice/inject-guice-testutils/src/test/java/org/opendaylight/odlguice/inject/guice/testutils/tests/ExamplePureGuiceTest.java
+/home/lumina/work/codebases/opendaylight/odlguice/inject-guice-testutils/src/test/java/org/opendaylight/odlguice/inject/guice/testutils/tests/GuiceRuleForgotAnnotationsModuleTest.java
+/home/lumina/work/codebases/opendaylight/odlguice/inject-guice-testutils/src/test/java/org/opendaylight/odlguice/inject/guice/testutils/tests/SomeInterfaceWithPostConstruct.java
+/home/lumina/work/codebases/opendaylight/odlguice/inject-guice-testutils/src/test/java/org/opendaylight/odlguice/inject/guice/testutils/tests/ExampleGuiceRuleTest.java
+/home/lumina/work/codebases/opendaylight/odlguice/inject-guice-testutils/src/test/java/org/opendaylight/odlguice/inject/guice/testutils/tests/SomeClassWithPostConstruct.java

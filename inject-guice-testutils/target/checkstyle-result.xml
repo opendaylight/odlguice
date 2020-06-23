@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="8.32">
+<file name="/home/lumina/work/codebases/opendaylight/odlguice/inject-guice-testutils/src/main/java/org/opendaylight/odlguice/inject/guice/testutils/AbstractGuiceJsr250Module.java">
+</file>
+<file name="/home/lumina/work/codebases/opendaylight/odlguice/inject-guice-testutils/src/main/java/org/opendaylight/odlguice/inject/guice/testutils/AbstractCheckedModule.java">
+</file>
+<file name="/home/lumina/work/codebases/opendaylight/odlguice/inject-guice-testutils/src/main/java/org/opendaylight/odlguice/inject/guice/testutils/AnnotationsModule.java">
+</file>
+<file name="/home/lumina/work/codebases/opendaylight/odlguice/inject-guice-testutils/src/main/java/org/opendaylight/odlguice/inject/guice/testutils/GuiceRule.java">
+</file>
+<file name="/home/lumina/work/codebases/opendaylight/odlguice/inject-guice-testutils/src/test/java/org/opendaylight/odlguice/inject/guice/testutils/tests/GuiceRuleForgotAnnotationsModuleTest.java">
+</file>
+<file name="/home/lumina/work/codebases/opendaylight/odlguice/inject-guice-testutils/src/test/java/org/opendaylight/odlguice/inject/guice/testutils/tests/SomeClassWithPostConstruct.java">
+</file>
+<file name="/home/lumina/work/codebases/opendaylight/odlguice/inject-guice-testutils/src/test/java/org/opendaylight/odlguice/inject/guice/testutils/tests/ExampleGuiceRuleTest.java">
+</file>
+<file name="/home/lumina/work/codebases/opendaylight/odlguice/inject-guice-testutils/src/test/java/org/opendaylight/odlguice/inject/guice/testutils/tests/SomeInterfaceWithPostConstruct.java">
+</file>
+<file name="/home/lumina/work/codebases/opendaylight/odlguice/inject-guice-testutils/src/test/java/org/opendaylight/odlguice/inject/guice/testutils/tests/ExamplePureGuiceTest.java">
+</file>
+</checkstyle>

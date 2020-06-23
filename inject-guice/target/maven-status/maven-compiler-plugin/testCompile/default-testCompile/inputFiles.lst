@@ -1,0 +1,5 @@
+/home/lumina/work/codebases/opendaylight/odlguice/inject-guice/src/test/java/org/opendaylight/odlguice/inject/guice/test/ClassPathScannerTestAnotherInterface.java
+/home/lumina/work/codebases/opendaylight/odlguice/inject-guice/src/test/java/org/opendaylight/odlguice/inject/guice/test/ClassPathScannerTestNoInterfacesImplementation.java
+/home/lumina/work/codebases/opendaylight/odlguice/inject-guice/src/test/java/org/opendaylight/odlguice/inject/guice/test/ClassPathScannerTest.java
+/home/lumina/work/codebases/opendaylight/odlguice/inject-guice/src/test/java/org/opendaylight/odlguice/inject/guice/test/ClassPathScannerTestImplementation.java
+/home/lumina/work/codebases/opendaylight/odlguice/inject-guice/src/test/java/org/opendaylight/odlguice/inject/guice/test/ClassPathScannerTestTopInterface.java

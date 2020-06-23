@@ -1,0 +1,12 @@
+#Mon Jun 22 16:51:01 IST 2020
+module-resource*?\:/home/lumina/work/codebases/opendaylight/odlguice/inject-guice-testutils/target/checkstyle-suppressions.xml=EE97A6736F94687719FF0D72FABB7DC6171B4659
+configuration*?=5FDC18F7845D504A5552D297E0627E73C2997F3A
+/home/lumina/work/codebases/opendaylight/odlguice/inject-guice-testutils/src/main/java/org/opendaylight/odlguice/inject/guice/testutils/GuiceRule.java=1591703923634
+/home/lumina/work/codebases/opendaylight/odlguice/inject-guice-testutils/src/test/java/org/opendaylight/odlguice/inject/guice/testutils/tests/ExamplePureGuiceTest.java=1591625747861
+/home/lumina/work/codebases/opendaylight/odlguice/inject-guice-testutils/src/main/java/org/opendaylight/odlguice/inject/guice/testutils/AnnotationsModule.java=1591625732559
+/home/lumina/work/codebases/opendaylight/odlguice/inject-guice-testutils/src/test/java/org/opendaylight/odlguice/inject/guice/testutils/tests/GuiceRuleForgotAnnotationsModuleTest.java=1591625747869
+/home/lumina/work/codebases/opendaylight/odlguice/inject-guice-testutils/src/main/java/org/opendaylight/odlguice/inject/guice/testutils/AbstractCheckedModule.java=1591703940014
+/home/lumina/work/codebases/opendaylight/odlguice/inject-guice-testutils/src/test/java/org/opendaylight/odlguice/inject/guice/testutils/tests/SomeInterfaceWithPostConstruct.java=1591625748049
+/home/lumina/work/codebases/opendaylight/odlguice/inject-guice-testutils/src/main/java/org/opendaylight/odlguice/inject/guice/testutils/AbstractGuiceJsr250Module.java=1591625732587
+/home/lumina/work/codebases/opendaylight/odlguice/inject-guice-testutils/src/test/java/org/opendaylight/odlguice/inject/guice/testutils/tests/SomeClassWithPostConstruct.java=1591625747849
+/home/lumina/work/codebases/opendaylight/odlguice/inject-guice-testutils/src/test/java/org/opendaylight/odlguice/inject/guice/testutils/tests/ExampleGuiceRuleTest.java=1591625748041

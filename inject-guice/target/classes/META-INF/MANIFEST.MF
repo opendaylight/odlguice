@@ -1,0 +1,28 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1592824877257
+Build-Jdk: 11.0.7
+Built-By: lumina
+Bundle-Description: OpenDaylight is leading the transformation to Open S
+ oftware Defined Networking (SDN). For more information, please see http
+ s://www.opendaylight.org
+Bundle-DocURL: https://www.opendaylight.org
+Bundle-License: https://www.eclipse.org/legal/epl-v10.html
+Bundle-ManifestVersion: 2
+Bundle-Name: ODL :: odlguice :: inject.guice
+Bundle-SymbolicName: org.opendaylight.odlguice.inject.guice
+Bundle-Vendor: OpenDaylight
+Bundle-Version: 1.0.0.SNAPSHOT
+Created-By: Apache Maven Bundle Plugin
+Export-Package: org.opendaylight.odlguice.inject.guice;uses:="com.google
+ .inject,org.opendaylight.odlguice.inject";version="1.0.0"
+Import-Package: com.google.inject;version="[1.4,2)",com.google.inject.bi
+ nder;version="[1.4,2)",org.opendaylight.odlguice.inject;version="[1.0,2
+ )"
+Include-Resource: ,/home/lumina/work/codebases/opendaylight/odlguice/inj
+ ect-guice/target/classes/LICENSE,META-INF/git.properties=-/home/lumina/
+ work/codebases/opendaylight/odlguice/inject-guice/target/classes/META-I
+ NF/git.properties,META-INF/services=-/home/lumina/work/codebases/openda
+ ylight/odlguice/inject-guice/target/classes/META-INF/services
+Private-Package: org.opendaylight.odlguice.inject.guice
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=11))"
+Tool: Bnd-4.2.0.201903051501

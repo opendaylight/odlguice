@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="8.32">
+<file name="/home/lumina/work/codebases/opendaylight/odlguice/inject-guice/src/main/java/org/opendaylight/odlguice/inject/guice/AutoWiringModule.java">
+</file>
+<file name="/home/lumina/work/codebases/opendaylight/odlguice/inject-guice/src/main/java/org/opendaylight/odlguice/inject/guice/AbstractCheckedModule.java">
+</file>
+<file name="/home/lumina/work/codebases/opendaylight/odlguice/inject-guice/src/main/java/org/opendaylight/odlguice/inject/guice/GuiceClassPathBinder.java">
+</file>
+<file name="/home/lumina/work/codebases/opendaylight/odlguice/inject-guice/src/test/java/org/opendaylight/odlguice/inject/guice/test/ClassPathScannerTest.java">
+</file>
+<file name="/home/lumina/work/codebases/opendaylight/odlguice/inject-guice/src/test/java/org/opendaylight/odlguice/inject/guice/test/ClassPathScannerTestAnotherInterface.java">
+</file>
+<file name="/home/lumina/work/codebases/opendaylight/odlguice/inject-guice/src/test/java/org/opendaylight/odlguice/inject/guice/test/ClassPathScannerTestNoInterfacesImplementation.java">
+</file>
+<file name="/home/lumina/work/codebases/opendaylight/odlguice/inject-guice/src/test/java/org/opendaylight/odlguice/inject/guice/test/ClassPathScannerTestImplementation.java">
+</file>
+<file name="/home/lumina/work/codebases/opendaylight/odlguice/inject-guice/src/test/java/org/opendaylight/odlguice/inject/guice/test/ClassPathScannerTestTopInterface.java">
+</file>
+</checkstyle>

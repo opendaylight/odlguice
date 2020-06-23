@@ -1,0 +1,121 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<duplicate-finder-result version="1">
+    <project artifactId="inject.guice" groupId="org.opendaylight.odlguice" version="1.0.0-SNAPSHOT" type="bundle"/>
+    <configuration skip="false" quiet="true" checkCompileClasspath="true" checkRuntimeClasspath="true" checkTestClasspath="true" failBuildInCaseOfDifferentContentConflict="true" failBuildInCaseOfEqualContentConflict="false" failBuildInCaseOfConflict="false" printEqualFiles="false" preferLocal="true" includeBootClasspath="false" bootClasspathProperty="sun.boot.class.path" includePomProjects="false" useDefaultResourceIgnoreList="true" useDefaultClassIgnoreList="true" useResultFile="true" resultFileMinClasspathCount="2" resultFile="/home/lumina/work/codebases/opendaylight/odlguice/inject-guice/target/duplicate-finder-result.xml">
+        <ignoredResourcePatterns>
+            <ignoredResourcePattern>org/opendaylight/blueprint/.*\.xml$</ignoredResourcePattern>
+            <ignoredResourcePattern>OSGI-OPT/bnd.bnd$</ignoredResourcePattern>
+            <ignoredResourcePattern>WEB-INF/web.xml</ignoredResourcePattern>
+            <ignoredResourcePattern>README.*$</ignoredResourcePattern>
+            <ignoredResourcePattern>.*\.html$</ignoredResourcePattern>
+            <ignoredResourcePattern>reference.conf</ignoredResourcePattern>
+        </ignoredResourcePatterns>
+        <ignoredClassPatterns/>
+        <conflictingDependencies/>
+        <ignoredDependencies>
+            <dependency artifactId="slf4j-simple" groupId="org.slf4j" type="jar"/>
+            <dependency artifactId="opendaylight-karaf-empty" groupId="org.opendaylight.odlparent" type="jar"/>
+        </ignoredDependencies>
+    </configuration>
+    <results>
+        <result name="compile" conflictState="no-conflict" failed="false">
+            <conflicts/>
+            <ignoredResourcePatterns>
+                <ignoredResourcePattern>^META-INF/.*</ignoredResourcePattern>
+                <ignoredResourcePattern>^OSGI-INF/.*</ignoredResourcePattern>
+                <ignoredResourcePattern>^licenses/.*</ignoredResourcePattern>
+                <ignoredResourcePattern>.*license(\.txt)?$</ignoredResourcePattern>
+                <ignoredResourcePattern>.*notice(\.txt)?$</ignoredResourcePattern>
+                <ignoredResourcePattern>.*readme(\.txt)?$</ignoredResourcePattern>
+                <ignoredResourcePattern>.*third-party(\.txt)?$</ignoredResourcePattern>
+                <ignoredResourcePattern>.*package\.html$</ignoredResourcePattern>
+                <ignoredResourcePattern>.*overview\.html$</ignoredResourcePattern>
+                <ignoredResourcePattern>org/opendaylight/blueprint/.*\.xml$</ignoredResourcePattern>
+                <ignoredResourcePattern>OSGI-OPT/bnd.bnd$</ignoredResourcePattern>
+                <ignoredResourcePattern>WEB-INF/web.xml</ignoredResourcePattern>
+                <ignoredResourcePattern>README.*$</ignoredResourcePattern>
+                <ignoredResourcePattern>.*\.html$</ignoredResourcePattern>
+                <ignoredResourcePattern>reference.conf</ignoredResourcePattern>
+            </ignoredResourcePatterns>
+            <ignoredDirectoryPatterns>
+                <ignoredDirectoryPattern>^.git$</ignoredDirectoryPattern>
+                <ignoredDirectoryPattern>^.svn$</ignoredDirectoryPattern>
+                <ignoredDirectoryPattern>^.hg$</ignoredDirectoryPattern>
+                <ignoredDirectoryPattern>^.bzr$</ignoredDirectoryPattern>
+            </ignoredDirectoryPatterns>
+            <ignoredClassPatterns>
+                <ignoredClassPattern>^(.*\.)?.*\$.*$</ignoredClassPattern>
+                <ignoredClassPattern>^(.*\.)?package-info$</ignoredClassPattern>
+                <ignoredClassPattern>^(.*\.)?module-info$</ignoredClassPattern>
+            </ignoredClassPatterns>
+            <classpathElements type="classes"/>
+            <classpathElements type="resources"/>
+        </result>
+        <result name="runtime" conflictState="no-conflict" failed="false">
+            <conflicts/>
+            <ignoredResourcePatterns>
+                <ignoredResourcePattern>^META-INF/.*</ignoredResourcePattern>
+                <ignoredResourcePattern>^OSGI-INF/.*</ignoredResourcePattern>
+                <ignoredResourcePattern>^licenses/.*</ignoredResourcePattern>
+                <ignoredResourcePattern>.*license(\.txt)?$</ignoredResourcePattern>
+                <ignoredResourcePattern>.*notice(\.txt)?$</ignoredResourcePattern>
+                <ignoredResourcePattern>.*readme(\.txt)?$</ignoredResourcePattern>
+                <ignoredResourcePattern>.*third-party(\.txt)?$</ignoredResourcePattern>
+                <ignoredResourcePattern>.*package\.html$</ignoredResourcePattern>
+                <ignoredResourcePattern>.*overview\.html$</ignoredResourcePattern>
+                <ignoredResourcePattern>org/opendaylight/blueprint/.*\.xml$</ignoredResourcePattern>
+                <ignoredResourcePattern>OSGI-OPT/bnd.bnd$</ignoredResourcePattern>
+                <ignoredResourcePattern>WEB-INF/web.xml</ignoredResourcePattern>
+                <ignoredResourcePattern>README.*$</ignoredResourcePattern>
+                <ignoredResourcePattern>.*\.html$</ignoredResourcePattern>
+                <ignoredResourcePattern>reference.conf</ignoredResourcePattern>
+            </ignoredResourcePatterns>
+            <ignoredDirectoryPatterns>
+                <ignoredDirectoryPattern>^.git$</ignoredDirectoryPattern>
+                <ignoredDirectoryPattern>^.svn$</ignoredDirectoryPattern>
+                <ignoredDirectoryPattern>^.hg$</ignoredDirectoryPattern>
+                <ignoredDirectoryPattern>^.bzr$</ignoredDirectoryPattern>
+            </ignoredDirectoryPatterns>
+            <ignoredClassPatterns>
+                <ignoredClassPattern>^(.*\.)?.*\$.*$</ignoredClassPattern>
+                <ignoredClassPattern>^(.*\.)?package-info$</ignoredClassPattern>
+                <ignoredClassPattern>^(.*\.)?module-info$</ignoredClassPattern>
+            </ignoredClassPatterns>
+            <classpathElements type="classes"/>
+            <classpathElements type="resources"/>
+        </result>
+        <result name="test" conflictState="no-conflict" failed="false">
+            <conflicts/>
+            <ignoredResourcePatterns>
+                <ignoredResourcePattern>^META-INF/.*</ignoredResourcePattern>
+                <ignoredResourcePattern>^OSGI-INF/.*</ignoredResourcePattern>
+                <ignoredResourcePattern>^licenses/.*</ignoredResourcePattern>
+                <ignoredResourcePattern>.*license(\.txt)?$</ignoredResourcePattern>
+                <ignoredResourcePattern>.*notice(\.txt)?$</ignoredResourcePattern>
+                <ignoredResourcePattern>.*readme(\.txt)?$</ignoredResourcePattern>
+                <ignoredResourcePattern>.*third-party(\.txt)?$</ignoredResourcePattern>
+                <ignoredResourcePattern>.*package\.html$</ignoredResourcePattern>
+                <ignoredResourcePattern>.*overview\.html$</ignoredResourcePattern>
+                <ignoredResourcePattern>org/opendaylight/blueprint/.*\.xml$</ignoredResourcePattern>
+                <ignoredResourcePattern>OSGI-OPT/bnd.bnd$</ignoredResourcePattern>
+                <ignoredResourcePattern>WEB-INF/web.xml</ignoredResourcePattern>
+                <ignoredResourcePattern>README.*$</ignoredResourcePattern>
+                <ignoredResourcePattern>.*\.html$</ignoredResourcePattern>
+                <ignoredResourcePattern>reference.conf</ignoredResourcePattern>
+            </ignoredResourcePatterns>
+            <ignoredDirectoryPatterns>
+                <ignoredDirectoryPattern>^.git$</ignoredDirectoryPattern>
+                <ignoredDirectoryPattern>^.svn$</ignoredDirectoryPattern>
+                <ignoredDirectoryPattern>^.hg$</ignoredDirectoryPattern>
+                <ignoredDirectoryPattern>^.bzr$</ignoredDirectoryPattern>
+            </ignoredDirectoryPatterns>
+            <ignoredClassPatterns>
+                <ignoredClassPattern>^(.*\.)?.*\$.*$</ignoredClassPattern>
+                <ignoredClassPattern>^(.*\.)?package-info$</ignoredClassPattern>
+                <ignoredClassPattern>^(.*\.)?module-info$</ignoredClassPattern>
+            </ignoredClassPatterns>
+            <classpathElements type="classes"/>
+            <classpathElements type="resources"/>
+        </result>
+    </results>
+</duplicate-finder-result>

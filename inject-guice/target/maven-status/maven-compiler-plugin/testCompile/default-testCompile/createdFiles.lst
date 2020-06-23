@@ -1,0 +1,5 @@
+org/opendaylight/odlguice/inject/guice/test/ClassPathScannerTestAnotherInterface.class
+org/opendaylight/odlguice/inject/guice/test/ClassPathScannerTestImplementation.class
+org/opendaylight/odlguice/inject/guice/test/ClassPathScannerTestTopInterface.class
+org/opendaylight/odlguice/inject/guice/test/ClassPathScannerTest.class
+org/opendaylight/odlguice/inject/guice/test/ClassPathScannerTestNoInterfacesImplementation.class

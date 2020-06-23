@@ -1,0 +1,3 @@
+org/opendaylight/odlguice/inject/guice/GuiceClassPathBinder.class
+org/opendaylight/odlguice/inject/guice/AutoWiringModule.class
+org/opendaylight/odlguice/inject/guice/AbstractCheckedModule.class

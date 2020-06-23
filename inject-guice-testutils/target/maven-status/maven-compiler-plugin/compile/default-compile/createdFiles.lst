@@ -1,0 +1,5 @@
+org/opendaylight/odlguice/inject/guice/testutils/AbstractGuiceJsr250Module.class
+org/opendaylight/odlguice/inject/guice/testutils/GuiceRule$1.class
+org/opendaylight/odlguice/inject/guice/testutils/AnnotationsModule.class
+org/opendaylight/odlguice/inject/guice/testutils/AbstractCheckedModule.class
+org/opendaylight/odlguice/inject/guice/testutils/GuiceRule.class
