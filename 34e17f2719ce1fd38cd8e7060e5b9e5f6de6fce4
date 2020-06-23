@@ -1,0 +1,67 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "21e5c788_a4c4fd79",
+        "filename": "pom.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 649
+      },
+      "writtenOn": "2020-06-23T12:14:12Z",
+      "side": 1,
+      "message": "please use spaces instead of tabs",
+      "revId": "34e17f2719ce1fd38cd8e7060e5b9e5f6de6fce4",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "6390021c_d3f57c86",
+        "filename": "pom.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 649
+      },
+      "writtenOn": "2020-06-23T12:14:12Z",
+      "side": 1,
+      "message": "top-level project, it should not be published and be derived from odlparent-lite.\nopt for explicit parent/artifacts modules.",
+      "range": {
+        "startLine": 13,
+        "startChar": 14,
+        "endLine": 13,
+        "endChar": 27
+      },
+      "revId": "34e17f2719ce1fd38cd8e7060e5b9e5f6de6fce4",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "cd94584f_a4307b82",
+        "filename": "pom.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 91,
+      "author": {
+        "id": 649
+      },
+      "writtenOn": "2020-06-23T12:14:12Z",
+      "side": 1,
+      "message": "this is massive duplicate from infrautils. there are two questions that we need to answer:\n- is this really useful in this project? (my take: no)\n- should this project depend on infrautils? (my take: no)\n\nThis would make this project quickly frozed, and allow odlguice-\u003einfrautils dependency (as needed by infrautils compat layer).",
+      "range": {
+        "startLine": 91,
+        "startChar": 3,
+        "endLine": 91,
+        "endChar": 22
+      },
+      "revId": "34e17f2719ce1fd38cd8e7060e5b9e5f6de6fce4",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81",
+      "unresolved": true
+    }
+  ]
+}
