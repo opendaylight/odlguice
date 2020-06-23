@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- vi: set et smarttab sw=2 tabstop=2: -->
+<!-- Copyright © 2016 Red Hat, Inc. and others. All rights reserved. This 
+	program and the accompanying materials are made available under the terms 
+	of the Eclipse Public License v1.0 which accompanies this distribution, and 
+	is available at http://www.eclipse.org/legal/epl-v10.html -->
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+	<parent>
+		<groupId>org.opendaylight.odlparent</groupId>
+		<artifactId>bundle-parent</artifactId>
+		<version>7.0.2</version>
+		<relativePath />
+	</parent>
+
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>org.opendaylight.odlguice</groupId>
+	<artifactId>odlguice</artifactId>
+	<version>1.0.0-SNAPSHOT</version>
+	<packaging>pom</packaging>
+	<name>odlguice</name>
+
+	<properties>
+		<!-- Enforce all of odlparent's optional code quality checks: -->
+		<pmd.cpd.fail>true</pmd.cpd.fail>                    <!-- Fails build for copy/pasted code -->
+		<duplicate-finder.skip>false</duplicate-finder.skip> <!-- Fails build if duplicate classpath entries on dependencies (odlparent 
+			3.0.0) -->
+		<odlparent.modernizer.enforce>true</odlparent.modernizer.enforce>
+	</properties>
+
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<!-- ClassGraph is used both in the ClasspathHellDuplicatesCheckRule 
+					as well as in the ClassPathScanner -->
+				<groupId>io.github.classgraph</groupId>
+				<artifactId>classgraph</artifactId>
+				<version>4.8.47</version>
+			</dependency>
+			<dependency>
+				<groupId>com.mycila.guice.extensions</groupId>
+				<artifactId>mycila-guice-jsr250</artifactId>
+				<version>4.0.rc1</version>
+			</dependency>
+			<dependency>
+				<groupId>com.google.inject</groupId>
+				<artifactId>guice</artifactId>
+				<version>4.2.3</version>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+
+	<dependencies>
+		<dependency>
+			<groupId>com.google.truth</groupId>
+			<artifactId>truth</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.google.errorprone</groupId>
+			<artifactId>error_prone_annotations</artifactId>
+			<!-- Keep this version in sync with annotationProcessorPaths declaration 
+				below -->
+			<version>2.4.0</version>
+			<scope>provided</scope>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.felix</groupId>
+				<artifactId>maven-bundle-plugin</artifactId>
+				<extensions>true</extensions>
+			</plugin>
+		</plugins>
+	</build>
+
+
+
+	<scm>
+		<connection>scm:git:ssh://git.opendaylight.org:29418/odlguice.git</connection>
+		<developerConnection>scm:git:ssh://git.opendaylight.org:29418/odlguice.git</developerConnection>
+		<!-- <url>https://wiki.opendaylight.org/view/Infrastructure_Utilities:Main</url> -->
+		<tag>HEAD</tag>
+	</scm>
+
+	<profiles>
+		<profile>
+			<id>errorprone</id>
+			<!-- Run Error Prone (see http://errorprone.info) UNLESS we're running 
+				Maven inside the Eclipse IDE under M2E (i.e. only on the "mvn" CLI) because 
+				in M2E it causes havoc for the m2e-apt extension (which configures Annotations 
+				Processors, such as e.g. http://Immutables.org, for the Eclipse JDT APT support); 
+				see full details in https://github.com/jbosstools/m2e-apt/issues/62. Not 
+				running errorprone within the Eclipse IDE is not a problem, because that's 
+				not yet supported, anyway; see http://errorprone.info/docs/installation#Eclipse. -->
+			<activation>
+				<property>
+					<name>!m2e.version</name>
+				</property>
+				<!-- JDK15 is EA as of this changing, so might break in future -->
+				<jdk>[8,15)</jdk>
+			</activation>
+
+			<build>
+				<plugins>
+					<plugin>
+						<artifactId>maven-compiler-plugin</artifactId>
+						<configuration>
+							<compilerArgs combine.children="append">
+								<arg>-XDcompilePolicy=simple</arg>
+								<arg>
+									-Xplugin:ErrorProne
+									<!-- TODO evaluate further which other non-default error prone bug 
+										patterns could also be enabled... http://errorprone.info/bugpatterns -->
+									-XepExcludedPaths:.*/target/.*
+									-XepDisableWarningsInGeneratedCode
+									<!-- TODO Do we need and want <arg>-Xep:OperatorPrecedence:OFF</arg> 
+										? -->
+									<!-- There are lots of disabled goodies in error-prone which only 
+										emit warnings (which nobody will ever look at!), so let us enable them all 
+										as least as warnings, and then selectively turn some of them into ERROR, 
+										and suppress those we really don't want (or can't enforce for whatever reason) 
+										with OFF. -->
+									-XepAllDisabledChecksAsWarnings
+									<!-- StaticOrDefaultInterfaceMethod is an Android specific warning 
+										which we don't care about -->
+									-Xep:StaticOrDefaultInterfaceMethod:OFF
+									<!-- FieldMissingNullable is badly broken :( https://github.com/google/error-prone/issues/708 -->
+									-Xep:FieldMissingNullable:OFF
+									<!-- To "Use parameter comments to document ambiguous literals" 
+										is unrealistic on a large existing code base -->
+									-Xep:BooleanParameter:OFF
+									-Xep:InconsistentOverloads:ERROR
+									-Xep:MethodCanBeStatic:ERROR
+									-Xep:ThrowsUncheckedException:OFF
+									<!-- TODO -Xep:TestExceptionChecker:ERROR once all @Test with expected 
+										use org.opendaylight.infrautils.testutils.Asserts.assertThrows() instead -->
+									-Xep:RedundantThrows:ERROR
+									-Xep:Var:ERROR
+									<!-- Following are things which seem useful to enforce, found in 
+										other projects; we could relax these again if during enforcement all over 
+										infrautils we find them to be too strict -->
+									-Xep:ConstantField:ERROR
+									-Xep:EmptySetMultibindingContributions:ERROR
+									-Xep:MixedArrayDimensions:ERROR
+									-Xep:MultipleTopLevelClasses:ERROR
+									-Xep:MultiVariableDeclaration:ERROR
+									-Xep:PackageLocation:ERROR
+									-Xep:PrivateConstructorForNoninstantiableModule:ERROR
+									-Xep:RemoveUnusedImports:ERROR
+									-Xep:UnnecessaryStaticImport:ERROR
+									-Xep:UseBinds:ERROR
+									-Xep:WildcardImport:ERROR
+									<!-- FutureReturnValueIgnored is better (stronger) than error-prone's 
+										own (and FindBug's) @CheckReturnValue annotation, as it checks that ANY return 
+										Future are checked, not just those from methods annotated @CheckReturnValue -->
+									-Xep:FutureReturnValueIgnored:ERROR
+									-Xep:IntLongMath:ERROR
+									-Xep:FloatCast:ERROR
+									-Xep:ClassNewInstance:ERROR
+									-Xep:ThreeLetterTimeZoneID:ERROR
+									-Xep:UnsafeFinalization:ERROR
+									-Xep:MutableMethodReturnType:ERROR
+									-Xep:SynchronizeOnNonFinalField:ERROR
+									-Xep:WaitNotInLoop:ERROR
+									-Xep:SwitchDefault:ERROR
+									-Xep:ReachabilityFenceUsage:ERROR
+									-Xep:BoxedPrimitiveConstructor:ERROR
+									-Xep:InjectOnConstructorOfAbstractClass:ERROR
+									-Xep:StringSplitter:ERROR
+									-Xep:UnnecessaryDefaultInEnumSwitch:ERROR
+									-Xep:DefaultCharset:ERROR
+									-Xep:StreamResourceLeak:ERROR
+									<!-- new in 2.3.0 -->
+									-Xep:InconsistentCapitalization:ERROR
+									-Xep:TruthIncompatibleType:ERROR
+									-Xep:ByteBufferBackingArray:ERROR
+									-Xep:OrphanedFormatString:ERROR
+									-Xep:CatchAndPrintStackTrace:ERROR
+									-Xep:VarTypeName:ERROR
+									<!-- new in 2.3.1 -->
+									-Xep:ObjectToString:ERROR
+									-Xep:AssertThrowsMultipleStatements:ERROR
+									-Xep:FieldCanBeFinal:ERROR
+									<!-- new in 2.3.2 -->
+									-Xep:AndroidJdkLibsChecker:OFF
+									-Xep:Java7ApiChecker:OFF
+								</arg>
+							</compilerArgs>
+							<annotationProcessorPaths
+								combine.children="append">
+								<path>
+									<groupId>com.google.errorprone</groupId>
+									<artifactId>error_prone_core</artifactId>
+									<!-- Keep this version in sync with dependency declaration above -->
+									<version>2.4.0</version>
+								</path>
+							</annotationProcessorPaths>
+						</configuration>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+	</profiles>
+
+	<modules>
+		<module>inject</module>
+		<module>inject-guice</module>
+		<module>inject-guice-testutils</module>
+	</modules>
+</project>
