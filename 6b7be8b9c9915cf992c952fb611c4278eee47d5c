@@ -1,0 +1,140 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "f1a588a3_5dfe31fd",
+        "filename": "common/parent/target/checkstyle-cachefile",
+        "patchSetId": 9
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 8351
+      },
+      "writtenOn": "2020-07-14T15:56:42Z",
+      "side": 1,
+      "message": "Remove this file",
+      "revId": "6b7be8b9c9915cf992c952fb611c4278eee47d5c",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "a437a414_9da87bb8",
+        "filename": "common/parent/target/checkstyle-checker.xml",
+        "patchSetId": 9
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 8351
+      },
+      "writtenOn": "2020-07-14T15:56:42Z",
+      "side": 1,
+      "message": "Remove all the target folder items",
+      "revId": "6b7be8b9c9915cf992c952fb611c4278eee47d5c",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "c137ad2a_e7f04c34",
+        "filename": "common/parent/target/checkstyle-header.txt",
+        "patchSetId": 9
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 8351
+      },
+      "writtenOn": "2020-07-14T15:56:42Z",
+      "side": 1,
+      "message": "Remove all the target folder items",
+      "revId": "6b7be8b9c9915cf992c952fb611c4278eee47d5c",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "210bddec_5c2f5da2",
+        "filename": "common/parent/target/checkstyle-result.xml",
+        "patchSetId": 9
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 8351
+      },
+      "writtenOn": "2020-07-14T15:56:42Z",
+      "side": 1,
+      "message": "Remove all the target folder items",
+      "revId": "6b7be8b9c9915cf992c952fb611c4278eee47d5c",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "aa121f0d_cec4593a",
+        "filename": "common/parent/target/checkstyle-suppressions.xml",
+        "patchSetId": 9
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 8351
+      },
+      "writtenOn": "2020-07-14T15:56:42Z",
+      "side": 1,
+      "message": "Remove all the target folder items",
+      "revId": "6b7be8b9c9915cf992c952fb611c4278eee47d5c",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "dea3006a_305b908c",
+        "filename": "common/parent/target/classes/LICENSE",
+        "patchSetId": 9
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 8351
+      },
+      "writtenOn": "2020-07-14T15:56:42Z",
+      "side": 1,
+      "message": "Remove all the target folder items",
+      "revId": "6b7be8b9c9915cf992c952fb611c4278eee47d5c",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "05779858_c1000e3e",
+        "filename": "docs/_static/logo.png",
+        "patchSetId": 9
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 8351
+      },
+      "writtenOn": "2020-07-14T15:56:42Z",
+      "side": 1,
+      "message": "Is this needed to be checked in?",
+      "revId": "6b7be8b9c9915cf992c952fb611c4278eee47d5c",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "0917aeed_2648941d",
+        "filename": "pom.xml",
+        "patchSetId": 9
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 8351
+      },
+      "writtenOn": "2020-07-14T15:56:42Z",
+      "side": 1,
+      "message": "Fix the tabs in this file. See the set et smartab command.",
+      "revId": "6b7be8b9c9915cf992c952fb611c4278eee47d5c",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81",
+      "unresolved": true
+    }
+  ]
+}
