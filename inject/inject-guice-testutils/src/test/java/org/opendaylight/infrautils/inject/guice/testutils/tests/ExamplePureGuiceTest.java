@@ -12,9 +12,9 @@ import static org.junit.Assert.assertTrue;
 import com.google.inject.AbstractModule;
 import com.google.inject.Guice;
 import com.google.inject.Injector;
-import com.mycila.guice.ext.closeable.CloseableModule;
-import com.mycila.guice.ext.jsr250.Jsr250Module;
 import org.junit.Test;
+import org.opendaylight.odlguice.inject.guice.extensions.closeable.CloseableModule;
+import org.opendaylight.odlguice.inject.guice.extensions.jsr250.Jsr250Module;
 
 /**
  * Example Guice Test without using Rule, just for illustration.
