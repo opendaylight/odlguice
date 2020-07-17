@@ -24,15 +24,19 @@
 
   <dependencies>
     <dependency>
+      <groupId>javax.annotation</groupId>
+      <artifactId>javax.annotation-api</artifactId>
+    </dependency>
+    <dependency>
       <groupId>javax.inject</groupId>
       <artifactId>javax.inject</artifactId>
       <!-- Important to enforce false because in odlparent it's true (see gerrit/c/56723) -->
       <optional>false</optional>
     </dependency>
-    <dependency>
+<!--    <dependency>
       <groupId>com.mycila.guice.extensions</groupId>
       <artifactId>mycila-guice-jsr250</artifactId>
-    </dependency>
+    </dependency>  -->
     <dependency>
       <groupId>com.google.inject</groupId>
       <artifactId>guice</artifactId>
@@ -48,5 +52,10 @@
       <version>${project.version}</version>
       <scope>test</scope>
     </dependency>
+    <dependency>
+      <groupId>org.opendaylight.odlguice</groupId>
+      <artifactId>inject.guice.extensions</artifactId>
+      <version>${project.version}</version>
+    </dependency>    
   </dependencies>
 </project>
