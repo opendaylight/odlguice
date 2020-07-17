@@ -40,11 +40,6 @@
       <scope>compile</scope>
     </dependency>
     <dependency>
-      <groupId>com.mycila.guice.extensions</groupId>
-      <artifactId>mycila-guice-jsr250</artifactId>
-      <scope>compile</scope>
-    </dependency>
-    <dependency>
       <groupId>com.google.inject</groupId>
       <artifactId>guice</artifactId>
       <scope>compile</scope>
@@ -52,6 +47,11 @@
     <dependency>
       <groupId>org.opendaylight.odlguice</groupId>
       <artifactId>inject</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.opendaylight.odlguice</groupId>
+      <artifactId>inject.guice.extensions.jsr250</artifactId>
       <version>${project.version}</version>
     </dependency>
   </dependencies>
