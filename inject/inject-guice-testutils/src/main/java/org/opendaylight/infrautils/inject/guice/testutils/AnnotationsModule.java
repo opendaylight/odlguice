@@ -8,8 +8,8 @@
 package org.opendaylight.infrautils.inject.guice.testutils;
 
 import com.google.inject.AbstractModule;
-import com.mycila.guice.ext.closeable.CloseableModule;
-import com.mycila.guice.ext.jsr250.Jsr250Module;
+import org.opendaylight.odlguice.inject.guice.extensions.closeable.CloseableModule;
+import org.opendaylight.odlguice.inject.guice.extensions.jsr250.Jsr250Module;
 
 /**
  * Guice module with built-in Mycila Guice Extensions for JSR-250 &amp;
