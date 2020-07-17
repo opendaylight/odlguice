@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "07d3d1fb_2a2436f3",
+        "filename": "INFO.yaml",
+        "patchSetId": 1
+      },
+      "lineNbr": 42,
+      "author": {
+        "id": 649
+      },
+      "writtenOn": "2020-07-17T11:25:27Z",
+      "side": 1,
+      "message": "this looks like a duplication of $PTL",
+      "range": {
+        "startLine": 42,
+        "startChar": 6,
+        "endLine": 42,
+        "endChar": 28
+      },
+      "revId": "f1b54ef581a8abf8f9c037251ec3cf082fcb8d39",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81",
+      "unresolved": true
+    }
+  ]
+}
