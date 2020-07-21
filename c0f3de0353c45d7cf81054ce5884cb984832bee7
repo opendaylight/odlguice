@@ -1,0 +1,89 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "95eb1aad_e703a39e",
+        "filename": "common/features/odl-odlguice-inject/.gitignore",
+        "patchSetId": 14
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 8351
+      },
+      "writtenOn": "2020-07-21T17:28:16Z",
+      "side": 1,
+      "message": "Remove this and other .gitignore. keep only on the top level directory",
+      "revId": "c0f3de0353c45d7cf81054ce5884cb984832bee7",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "e33476de_8e3b2cb7",
+        "filename": "common/features/odlguice-features/.gitignore",
+        "patchSetId": 14
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 8351
+      },
+      "writtenOn": "2020-07-21T17:28:16Z",
+      "side": 1,
+      "message": "Remove this and other .gitignore. keep only on the top level directory",
+      "revId": "c0f3de0353c45d7cf81054ce5884cb984832bee7",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "6814246d_540834ed",
+        "filename": "common/karaf/.gitignore",
+        "patchSetId": 14
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 8351
+      },
+      "writtenOn": "2020-07-21T17:28:16Z",
+      "side": 1,
+      "message": "Remove this and other .gitignore. keep only on the top level directory",
+      "revId": "c0f3de0353c45d7cf81054ce5884cb984832bee7",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "8727c208_a49c8c9e",
+        "filename": "inject/inject-guice-extensions/closeable/.gitignore",
+        "patchSetId": 14
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 8351
+      },
+      "writtenOn": "2020-07-21T17:28:16Z",
+      "side": 1,
+      "message": "Remove this and other .gitignore. keep only on the top level directory",
+      "revId": "c0f3de0353c45d7cf81054ce5884cb984832bee7",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "ee7b0b16_6890746b",
+        "filename": "inject/inject-guice-extensions/injection/.gitignore",
+        "patchSetId": 14
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 8351
+      },
+      "writtenOn": "2020-07-21T17:28:16Z",
+      "side": 1,
+      "message": "Remove this and other .gitignore. keep only on the top level directory",
+      "revId": "c0f3de0353c45d7cf81054ce5884cb984832bee7",
+      "serverId": "7fc14799-209e-464c-9743-7a06c2c21a81",
+      "unresolved": true
+    }
+  ]
+}
