@@ -12,7 +12,6 @@ import com.google.inject.Guice;
 import com.google.inject.Injector;
 import com.google.inject.Module;
 import com.google.inject.Stage;
-import com.mycila.guice.ext.closeable.CloseableInjector;
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -20,6 +19,7 @@ import org.junit.rules.MethodRule;
 import org.junit.runners.model.FrameworkMethod;
 import org.junit.runners.model.Statement;
 import org.opendaylight.infrautils.inject.PostFullSystemInjectionListener;
+import org.opendaylight.odlguice.inject.guice.extensions.closeable.CloseableInjector;
 
 /**
  * JUnit Rule which initializes Guice {@link Injector} for tests.
