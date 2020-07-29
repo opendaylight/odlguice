@@ -38,6 +38,21 @@
               <artifactId>inject.guice</artifactId>
               <version>${project.version}</version>
             </dependency>
+            <dependency>
+              <groupId>${project.groupId}</groupId>
+              <artifactId>inject.guice.extensions.jsr250</artifactId>
+              <version>${project.version}</version>
+            </dependency>
+            <dependency>
+              <groupId>${project.groupId}</groupId>
+              <artifactId>inject.guice.extensions.injection</artifactId>
+              <version>${project.version}</version>
+            </dependency>
+            <dependency>
+              <groupId>${project.groupId}</groupId>
+              <artifactId>inject.guice.extensions.closeable</artifactId>
+              <version>${project.version}</version>
+            </dependency>
 
             <!-- Test utilities -->
             <dependency>
