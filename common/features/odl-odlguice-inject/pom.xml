@@ -12,13 +12,13 @@
     <parent>
         <groupId>org.opendaylight.odlparent</groupId>
         <artifactId>single-feature-parent</artifactId>
-        <version>7.0.3</version>
+        <version>8.0.0</version>
         <relativePath/>
     </parent>
 
     <groupId>org.opendaylight.odlguice</groupId>
     <artifactId>odl-odlguice-inject</artifactId>
-    <version>1.0.0-SNAPSHOT</version>
+    <version>1.0.1-SNAPSHOT</version>
     <packaging>feature</packaging>
 
     <name>OpenDaylight :: odlguice :: @Inject</name>
